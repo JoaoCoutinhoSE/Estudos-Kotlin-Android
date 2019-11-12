@@ -13,9 +13,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         button_login.setOnClickListener{
-            if (editText_username.text.toString() == username){
+            if (login_input.editText?.text.toString() == username){
                 //usuario encontrado
-                if (editText_password.text.toString() == password){
+                if (password_input.editText?.text.toString() == password){
                     //Senha correta
                 }else {
                     //Senha incorreta
