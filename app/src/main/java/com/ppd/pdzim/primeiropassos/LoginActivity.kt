@@ -16,11 +16,12 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         button_login.setOnClickListener{
+            //Foi adicionado um evento que fará coisas quando clicado no botão "login"
             if (login_input.editText?.text.toString() == username){
                 //usuario encontrado
                 if (password_input.editText?.text.toString() == password){
                     //Senha correta
-                    var intent = Intent(this, PrincipalActivity::class.java)
+                    var intent = Intent(this, MenuActivity::class.java)
                     intent.putExtra("USER", username)
                     startActivity(intent)
                 }else {
@@ -33,6 +34,7 @@ class LoginActivity : AppCompatActivity() {
             }
         }
         login_input.editText?.addTextChangedListener(object: TextWatcher {
+            //Listener de texto que executa algo de acordo com a mudança do texto
             override fun afterTextChanged(s: Editable?) {
 
             }
@@ -47,6 +49,7 @@ class LoginActivity : AppCompatActivity() {
 
         })
         password_input.editText?.addTextChangedListener(object: TextWatcher{
+            //Mesma coisa
             override fun afterTextChanged(s: Editable?) {
 
             }
