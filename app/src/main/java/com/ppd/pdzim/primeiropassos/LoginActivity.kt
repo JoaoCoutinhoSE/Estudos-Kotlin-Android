@@ -21,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
                 //usuario encontrado
                 if (password_input.editText?.text.toString() == password){
                     //Senha correta
-                    var intent = Intent(this, MenuActivity::class.java)
+                    var intent = Intent(this, SplashActivity::class.java)
                     intent.putExtra("USER", username)
                     startActivity(intent)
                 }else {
