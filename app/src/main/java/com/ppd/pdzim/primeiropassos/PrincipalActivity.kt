@@ -2,6 +2,7 @@ package com.ppd.pdzim.primeiropassos
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 
@@ -18,6 +19,10 @@ class PrincipalActivity : AppCompatActivity() {
         val username:String = intent.getStringExtra("USER")
         textView_bemvindo.text = username + ", bem vindo"
 
+        Handler().postDelayed({
+
+            startActivity(Intent(this, MenuCardViewActivity::class.java))
+        }, 2000)
 
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
