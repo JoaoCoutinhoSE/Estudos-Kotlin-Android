@@ -5,6 +5,6 @@ import android.widget.TextView
 
 data class Produto (
 //    var Imagem : ImageView,
-    var Nome : TextView,
-    var Preco: TextView
+    var nome : String,
+    var preco: String
 )
