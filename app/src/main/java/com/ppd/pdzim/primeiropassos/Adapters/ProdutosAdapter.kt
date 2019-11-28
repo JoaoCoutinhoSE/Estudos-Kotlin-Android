@@ -27,10 +27,8 @@ class ProdutosAdapter(private val listaProdutos: MutableList<Produto>) : Recycle
         //Aqui você aplica os itens da lista que veio como parâmetro nos itens do ViewHolder (Ali em baixo)
         holder.nomeTextView.text = listaProdutos[position].nome
         holder.precoTextView.text = listaProdutos[position].preco
-        holder.imagemImageView.text = listaProdutos[position].imagem
-        Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(ImageView())
+        Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(holder.imagemImageView)
     }
-
 
     class ViewHolder (view : View) : RecyclerView.ViewHolder(view) {
         //Aqui eu pego os itens dentro do item inflado

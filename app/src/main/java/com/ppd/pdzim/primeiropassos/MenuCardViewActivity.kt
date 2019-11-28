@@ -22,83 +22,63 @@ class MenuCardViewActivity : AppCompatActivity() {
         listaProdutos.add(
             Produto(
                 nome = "Pao de queijo",
-                preco = "$20"
+                preco = "$20",
+                imagem = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqWhpb0TLdVQnVCzNmxjzk4COe3dOX-j-uUFLgK5rK92lerYMg"
             )
         )
         listaProdutos.add(
             Produto(
                 nome = "Skinny cheiro de pé",
-                preco = "$1000000000"
+                preco = "$1000000000",
+                imagem = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqWhpb0TLdVQnVCzNmxjzk4COe3dOX-j-uUFLgK5rK92lerYMg"
             )
         )
         listaProdutos.add(
             Produto(
                 nome = "Coca-Cola",
-                preco = "$5"
+                preco = "$5",
+                imagem = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqWhpb0TLdVQnVCzNmxjzk4COe3dOX-j-uUFLgK5rK92lerYMg"
             )
         )
         listaProdutos.add(
             Produto(
                 nome = "Sanduiche",
-                preco = "$3"
+                preco = "$3",
+                imagem = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqWhpb0TLdVQnVCzNmxjzk4COe3dOX-j-uUFLgK5rK92lerYMg"
+
             )
         )
         listaProdutos.add(
             Produto(
                 nome = "Mais exemplo",
-                preco = "$2"
+                preco = "$2",
+                imagem = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqWhpb0TLdVQnVCzNmxjzk4COe3dOX-j-uUFLgK5rK92lerYMg"
+
             )
         )
         listaProdutos.add(
             Produto(
                 nome = "kkkkkkkk",
-                preco = "$4"
+                preco = "$4",
+                imagem = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqWhpb0TLdVQnVCzNmxjzk4COe3dOX-j-uUFLgK5rK92lerYMg"
+
             )
         )
         listaProdutos.add(
             Produto(
                 nome = "Teste",
-                preco = "infinito"
+                preco = "infinito",
+                imagem = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqWhpb0TLdVQnVCzNmxjzk4COe3dOX-j-uUFLgK5rK92lerYMg"
+
             )
         )
         listaProdutos.add(
             Produto(
                 nome = "Mais exemplo2",
-                preco = "$2"
+                preco = "$2",
+                imagem = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQqWhpb0TLdVQnVCzNmxjzk4COe3dOX-j-uUFLgK5rK92lerYMg"
+
             )
         )
     }
 }
-//
-//        produtosRecyclerView.adapter = ProdutosAdapter(listaProdutos)
-//        produtosRecyclerView.layoutManager = LinearLayoutManager(this)
-//
-//        listaProdutos.add(
-//            Produto(
-//                nome = "Coca cola",
-//                preco = "1"
-//            )
-//        )
-//
-//        listaProdutos.add(
-//            Produto(
-//                nome = "Sanduiche de atum",
-//                preco = "1"
-//            )
-//        )
-//
-//        listaProdutos.add(
-//            Produto(
-//                nome = "Bolo",
-//                preco = "1"
-//            )
-//        )
-//
-//        listaProdutos.add(
-//            Produto(
-//                nome = "Skinni cheiro de pé",
-//                preco = "1"
-//            )
-//        )
-//    }
-//}
