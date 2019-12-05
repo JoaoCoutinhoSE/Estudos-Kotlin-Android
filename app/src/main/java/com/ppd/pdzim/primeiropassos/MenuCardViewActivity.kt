@@ -12,12 +12,14 @@ class MenuCardViewActivity : AppCompatActivity() {
 
     var listaProdutos: MutableList<Produto> = mutableListOf()
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_card_view)
 
         produtosRecyclerView.adapter = ProdutosAdapter(listaProdutos)
         produtosRecyclerView.layoutManager = LinearLayoutManager(this)
+
 
         listaProdutos.add(
             Produto(
@@ -81,4 +83,5 @@ class MenuCardViewActivity : AppCompatActivity() {
             )
         )
     }
+
 }
