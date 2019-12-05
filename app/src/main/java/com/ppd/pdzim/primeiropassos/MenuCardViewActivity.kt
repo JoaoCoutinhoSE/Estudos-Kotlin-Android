@@ -1,6 +1,7 @@
 package com.ppd.pdzim.primeiropassos
 
 import android.os.Bundle
+import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -82,6 +83,15 @@ class MenuCardViewActivity : AppCompatActivity() {
 
             )
         )
+
+        override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+            val inflater = menuInflater
+            inflater.inflate(R.layout.activity_menu_card_view, menu)
+
+            val searchItem = menu?.findItem(R.id.SearchView)
+            return true
+        }
+
     }
 
 }
